@@ -1,0 +1,26 @@
+{
+  "name": "auth-manager",
+  "version": "0.0.1",
+  "description": "Node Express project to manage authentication ",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "tsx watch src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Auth",
+    "Identity"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "migrate-mongo": "^11.0.0",
+    "mongoose": "^8.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
