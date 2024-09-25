@@ -5,7 +5,7 @@ import { Prisma } from "@prisma/client";
 
 type User = typeof prisma.user;
 async function isValidLogin(username: string, password: string) {
-  try {
+ 
     const user = await prisma.user.findUnique({
       select: {
         id: true,
@@ -25,10 +25,7 @@ async function isValidLogin(username: string, password: string) {
       return { id: user.id, username: user.username };
     }
     return null;
-  } catch (error) {
-    console.log(error);
-    return null;
-  }
+ 
 }
 
 async function createUser(username, password) {
